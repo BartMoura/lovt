@@ -187,6 +187,7 @@ section.estilos .container .img-estilo button {
     background-color: transparent;
     border: none;
     width: 100%;
+    
 }
 
 section.estilos .container .img-estilo img {
@@ -295,6 +296,5 @@ footer .container .info .social-media .midias{
     }
 
 }
-
 
 
