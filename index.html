@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>LOVT</title>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -19,22 +21,22 @@
             </div>
 
             <p class="olaUsuario"></p>
-            
+
             <div class="btn-menu">
                 <button class="btn-toggle-mode" onclick="toggleMode()">mudar tema</button>
                 <button><img src="img/hamburguer.svg" alt="Botão para mais informações" class="hamburguer"></button>
             </div>
         </div>
     </header>
-    
+
     <main>
         <section class="banner">
             <div class="container">
                 <div class="slide" style="background-image: url('img/Rectangle3.svg')"></div>
                 <!-- <img src="img/Rectangle3.svg" alt="imagem banner" class="slide"> -->
                 <div class="controls">
-                        <button href="#" title="anterior"><img src="img/arrow-left.svg" alt="anterior"></button>
-                        <button href="#" title="próximo"><img src="img/arrow-right.svg" alt="próximo"></button>
+                    <button href="#" title="anterior"><img src="img/arrow-left.svg" alt="anterior"></button>
+                    <button href="#" title="próximo"><img src="img/arrow-right.svg" alt="próximo"></button>
                 </div>
             </div>
         </section>
@@ -44,7 +46,7 @@
                 <!-- (article>.thumb+.info)*2  -> means: criar 2 articles com as class .thumb e .info -->
                 <article>
                     <div class="thumb">
-                        <img src="img/Rectangle6.svg" alt="Preview new item">  
+                        <img src="img/Rectangle6.svg" alt="Preview new item">
                     </div>
                     <div class="info">
                         <div class="tag">
@@ -52,23 +54,23 @@
                             <button class="botãoNew">New</button>
                         </div>
                         <p>Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente
-                            finis, bibendum egestas augue arcu ut est. Suco de cevadiss, é 
-                            um leite divinis, qui tem lupuliz, matis, aguis e fermentis. 
+                            finis, bibendum egestas augue arcu ut est. Suco de cevadiss, é
+                            um leite divinis, qui tem lupuliz, matis, aguis e fermentis.
                             Casamentiss faiz malandris se pirulitá. Cevadis im ampola pa</p>
                     </div>
                 </article>
-        
+
                 <article>
                     <div class="thumb">
-                        <img src="img/Rectangle7.svg" alt="Preview item for Sale">  
+                        <img src="img/Rectangle7.svg" alt="Preview item for Sale">
                     </div>
                     <div class="info">
                         <div class="tag">
                             <p class="price">$ 2,000</p>
                             <button class="botãoSale">Sale</button>
                         </div>
-                        <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, 
-                            deitado sem dormir, sentado sem cochilar e fazendo pose. 
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair,
+                            deitado sem dormir, sentado sem cochilar e fazendo pose.
                             Nullam volutpat risus nec leo commodo, ut interdum diam laoreet.</p>
                     </div>
                 </article>
@@ -83,9 +85,9 @@
                 </div>
                 <div class="img-estilo">
                     <button><img src="img/Rectangle11.svg" alt="Design Industrial"></button>
-                    
+
                     <button><img src="img/Rectangle12.svg" alt="Design Moderno"></button>
-                    
+
                     <button><img src="img/Rectangle13.svg" alt="Design Classico"></button>
                     <div class="nome-estilo">
                         <p class="industrial">Industrial</p>
@@ -95,9 +97,23 @@
 
 
                 </div>
-            </div>    
+            </div>
         </section>
-      
+
+        <section class="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="form_contact" action="thanks.html">
+                    <input type="text" name="nome" id="input_nome" placeholder="Nome">
+                    <input type="text" name="email" id="input_email" placeholder="Email">
+                    <input type="text" name="telefone" id="input_telefone" placeholder="Telefone">
+                    <textarea name="mensagem" id="input_mensagem" cols="30" rows="10"></textarea>
+                    <div class="mensagem-erro"></div>
+                    <button type="submit" id="btn-submit-contact">enviar</button>
+                </form>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="container">
@@ -122,6 +138,24 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                Newsletter
+                <button class="close" onclick="btnClose()">x</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <input type="text" name="Nome">
+                    <input type="email" name="email">
+                    <button type="submit">enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
+
 </html>
